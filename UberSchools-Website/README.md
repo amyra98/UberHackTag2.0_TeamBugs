@@ -11,4 +11,4 @@ Free open source images have been used from multiple sources.
 
 ## Deployed Website Link
 
-The demo website is hosted using the service Vercel and is available at the URL _ .
+The demo website is hosted using the service Vercel and is available at the URL https://uber-hack-tag2-0-team-bugs-website.vercel.app/ .
