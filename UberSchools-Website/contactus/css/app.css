@@ -1,0 +1,2549 @@
+/* common classes starts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+.hide {
+	display : none !important;
+}
+a {
+	outline:none;
+}
+.clear{
+	clear:both;
+}
+.row {
+	max-width: 61.25rem;
+	padding-left: 0rem;
+	padding-right: 0rem;
+}
+.column, .columns {
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+}
+html, body {
+	font-size:1em;
+	color:#333333;
+}
+h1 {
+	font-size:2.5rem;
+	font-weight:normal;
+	color:rgb(17, 17, 17);
+}
+@media only screen and (max-width: 1023px) {
+ h1 {
+ font-size:1.4rem;
+}
+}
+h2 {
+	font-size:1.875rem;
+	font-weight:300;
+	color:#000000;
+}
+@media only screen and (max-width: 640px) {
+ h2 {
+ font-size:1.5rem;
+}
+}
+p {
+	line-height:1.5;
+	font-weight:300;
+}
+input[type="text"] {
+	color:#666666;
+	border-color:#b7b7b7;
+}
+.noshadow {
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+}
+::-webkit-input-placeholder {
+	color:#666666;
+}
+::-moz-placeholder {
+	color:#666666;
+} /* firefox 19+ */
+:-ms-input-placeholder {
+	color:#666666;
+} /* ie */
+input:-moz-placeholder {
+	color:#666666;
+}
+button, .button {
+	display: inline-block;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background:#000000;
+	font-size:17px;
+	color:#ffffff;
+	line-height:2.3125rem;
+	padding-top:0;
+	padding-bottom:0;
+}
+button:hover, button:focus, .button:hover, .button:focus {
+	background-color:#000000;
+}
+.radius {
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+}
+img.radius {
+	max-width: 100%;
+}
+.box-header:after {
+	display: block;
+	content: "";
+	background: #585454;
+	width: 40px;
+	height: 2px;
+	margin-top:10px;
+	margin-bottom:15px;
+}
+.box-header:after {
+	width:80px;
+}
+@media only screen and (max-width: 640px) {
+ .box-header:after {
+ margin-left:auto;
+ margin-right:auto;
+}
+}
+.color-01 {
+	color:#000000;
+}
+/* common classes end */
+
+/* global-header classes starts */
+.global-header, .device-header {
+	display:none;
+}
+@media only screen and (min-width: 1024px) {
+ .global-header {
+ display: block;
+}
+}
+@media only screen and (max-width: 1023px) {
+ .device-header {
+ display: block;
+}
+}
+.global-header ul {
+	float:right;
+	list-style:none;
+	padding:37px 0 0 0;
+	margin:0;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+}
+.global-header .logo img {
+	max-width: none;
+}
+.global-header ul li span.beta, .device-header .right-off-canvas-menu .off-canvas-list li span.beta {
+	display:inline-block;
+	background:#0094a4;
+	color:#fff;
+	padding:4px 6px;
+	font-weight:bold;
+	text-transform:capitalize;
+	font-size:12px;
+	position:absolute;
+	top:-17px;
+	left:19px;
+	line-height:12px;
+	display:none;
+}
+.global-header ul li a:hover, .global-header ul li a.active {
+	color:#a09c9c;
+}
+.global-header ul li {
+	float:left;
+	position:relative;
+	z-index:0;
+}
+.global-header ul li a {
+	color:#333333;
+	padding:0 18px;
+}
+.global-header ul li:last-child a{
+	padding-right:0;
+}
+.device-header {
+	background:#fff;
+	height:3.3125rem;
+	line-height:3.3125rem;
+}
+.device-header .logo {
+	float:left;
+}
+.device-header .hamburger {
+	margin:20px 15px 0 0;
+	background:url(//images.uberapp.com/w/images/icons/icon_hamburger.png) 0 0 no-repeat;
+	width:26px;
+	height:14px;
+	float:right;
+	display:block;
+	text-indent:-999999px;
+}
+.device-header .right-off-canvas-menu {
+	width:16.8125rem;
+	background:#666666;
+}
+.device-header .right-off-canvas-menu .off-canvas-list li span.beta {
+	position:relative;
+	top:-1px;
+	left:5px;
+	display:none;
+}
+.device-header .right-off-canvas-menu .off-canvas-list li a {
+	border-bottom-color:#8c8c8c;
+	color: rgba(255, 255, 255, 0.7);
+	display:block;
+	padding:7px 31px 6px 31px;
+	transition: background 300ms ease 0s;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+}
+.move-left > .inner-wrap {
+	transform: translate3d(-16.8125rem, 0px, 0px);
+}
+.move-left .exit-off-canvas {
+	box-shadow: -4px 0 4px rgba(0, 0, 0, 0), 4px 0 4px rgba(0, 0, 0, 0);
+}
+/* global-header classes end */
+
+/* hero-image classes starts */
+.hero-image {
+	position:relative;
+	z-index:0;
+}
+.hero-image h1 {
+	position:absolute;
+	top:0;
+	left:0;
+	padding:1.0625rem 3.625rem;
+	font-weight:500;
+}
+@media only screen and (min-width: 768px) {
+	.hero-image h1 {
+		font-size: 2.5rem;
+	}
+}
+.hero-image h1 b {
+	font-weight:700;
+}
+.hero-image .phone {
+	position:absolute;
+	bottom:0;
+	left:56px;
+}
+.hero-image .download-button {
+	text-align:center;
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	display:none;
+}
+@media screen and (min-width: 481px) and (max-width: 720px) {
+  .hero-image .download-button {
+	bottom:55px;
+   }  
+}
+.hero-image .download-button .apple,
+.hero-image .download-button .android {
+	background:url(//images.uberapp.com/w/images/buttons/download-app-apple.png) 0 0 no-repeat;
+	width:146px;
+	height:46px;
+	display:inline-block;
+	text-indent:-99999px;
+}
+.hero-image .download-button .android {
+	background-image:url(//images.uberapp.com/w/images/buttons/download-app-android.png);
+}
+@media only screen and (max-width: 1024px) {
+ .hero-image {
+ padding-bottom:33px;
+}
+ .hero-image h1 {
+ padding:0.5625rem 1.0625rem;
+}
+ .hero-image .phone {
+ display:none;
+}
+ .hero-image .download-button {
+ display:block;
+}
+}
+/* hero-image classes end */
+
+/* help-box classes starts */
+.help-box {
+	padding:18px 0 32px 0;
+}
+.help-box h2 {
+	margin-bottom:0;
+}
+.fields {
+	padding-top:15px;
+	display:none;
+}
+.help-box h6 {
+	line-height:1.5;
+	font-weight:300;
+	Color:#333333;
+}
+.fields {
+	text-align:center;
+}
+.fields input {
+	width:194px;
+	display:inline-block;
+}
+
+.call-info {
+	padding:10px 5px 10px 5px;
+	text-align:center;
+}
+.call-info a {
+    color: #585454;
+}
+
+@media only screen and (max-width: 640px) {
+ .help-box {
+ padding:7px 0 12px 0;
+}
+}
+@media only screen and (min-width: 1024px) {
+ .fields {
+ display:block;
+}
+}
+/* help-box classes end */
+
+/* help-things classes starts */
+.help-things {
+	text-align:center;
+	max-width: 61.25rem;
+	margin:0 auto;
+}
+.help-things .row {
+	background:#fff;
+	padding:18px 0 28px 0;
+}
+.help-things h2 {
+	padding-top:21px;
+	padding-bottom:7px;
+	background:#fff;
+	margin:0;
+}
+.help-things h6 {
+	color:#0094a4;
+	line-height:1.5;
+	font-weight:700;
+	padding:5px 0 3px 0;
+	margin:0;
+}
+.help-things p {
+	padding-right:0px;
+	padding-left:0px;
+}
+@media only screen and (max-width: 640px) {
+ .help-things {
+ padding-left:0rem;
+ padding-right:0rem;
+}
+ .help-things .row {
+ padding-bottom:8px;
+ padding-top:11px;
+}
+ .help-things h2 {
+ padding-top:23px;
+ padding-bottom:0px;
+}
+ .help-things h6 {
+ padding-top:9px;
+}
+ .help-things p {
+ margin-bottom:17px;
+}
+}
+/* help-things classes end */
+
+/* sitters-drivers classes starts */
+.sitters-drivers {
+}
+.sitters-drivers p {
+	margin-bottom:17px;
+}
+.sitters-drivers .row {
+}
+.sitters-drivers .content-box {
+	text-align:center;
+}
+.sitters-drivers .content-box h2 {
+	line-height:1.75rem;
+	padding:5px 0 0 0;
+}
+.sitters-drivers .content-box label {
+	display:inline-block;
+	background:#0d99a9;
+	color:#fff;
+	padding:4px 6px;
+	font-weight:bold;
+	text-transform:uppercase;
+	font-size:12px;
+	line-height:12px;
+}
+.sitters-drivers .image, .sitters-drivers .blue-panel {
+	display:none;
+}
+.drivers-sitters .medium-7 .apply {
+	padding:17px 0 0 0;
+}
+@media only screen and (min-width: 1024px) {
+ .drivers-sitters .medium-7 {
+ padding-left:40px;
+ padding-right:60px;
+}
+}
+.blue-panel {
+	background:rgba(255, 255, 255, 0.85);
+ 	padding:21px 36px 18px 36px;
+	text-align:left;
+}
+.blue-panel dl {
+	color:#00515a;
+	line-height:20px;
+	margin-bottom:16px;
+}
+.blue-panel dt{
+	font-family:'Open Sans', sans-serif;
+	font-weight:400;
+	font-size:1.875rem;
+	padding-bottom:15px;
+	background:url(//images.uberapp.com/w/images/icons/checkmark.png) left 12px no-repeat;
+	padding:14px 0 8px 44px;
+	font-size:1.125rem;
+	color:#666666;
+}
+@media only screen and (min-width: 641px) {
+ .sitters-drivers .row {
+ background:url(//images.uberapp.com/w/images/misc/image_home_02.jpg) top center no-repeat;
+ background-size:cover;
+ padding:50px 20px;
+}
+ .sitters-drivers .content-box {
+ width:23.75rem;
+ background:rgba(255, 255, 255, 0.85);
+ padding:21px 40px 12px 40px;
+}
+}
+@media only screen and (max-width: 640px) {
+ .sitters-drivers .image {
+ display:block;
+}
+ .sitters-drivers .content-box label {
+ margin:17px 0 0 0;
+}
+ .sitters-drivers .content-box h2 {
+ margin-top:0;
+}
+ .sitters-drivers a.button {
+ margin:13px 0 30px 0;
+}
+}
+/* sitters-drivers classes end */
+
+/* global-footer classes starts */
+.global-footer {
+	background:#777777;
+}
+.global-footer .logos li {
+	padding-bottom:0;
+}
+.global-footer .row {
+	padding:8px;
+	color:#FFFFFF;
+}
+.global-footer .logos {
+	background:#d7d3d1;
+}
+.global-footer .logos .row{
+	padding:20px 8px;
+}
+.global-footer .row.bg {
+	
+}
+.global-footer .row .inline-list {
+	margin-bottom:0;
+}
+.global-footer .row.logos .inline-list{
+	text-align:center;
+}
+.global-footer .row .inline-list, .global-footer .row .inline-list a {
+	color:#FFFFFF;
+	font-size:0.75rem;
+}
+.global-footer .row .inline-list.social-buttons li {
+	margin-left:0.6rem;
+}
+.global-footer .row .inline-list.social-buttons li {
+	position:relative;
+	top:0px;
+	left:0;
+}
+.global-footer .row .inline-list.main-links li {
+	padding:0.5rem 0rem 0 0;
+}
+@media only screen and (min-width: 768px) {
+ .global-footer .row .inline-list.main-links li {
+ padding-right:2rem;
+}
+}
+@media only screen and (min-width: 1024px) {
+ .global-footer .row .inline-list.main-links li {
+ padding-right:3rem;
+}
+}
+@media only screen and (max-width: 767px) {
+ .global-footer .logos li {
+ display:block;
+ text-align:center;
+ float:none;
+}
+ .global-footer .logos li img {
+ margin:0 auto;
+}
+}
+.global-footer .row .inline-list.social-buttons li:last-child {
+	top:0;
+}
+.global-footer hr {
+	border-color:#999999;
+}
+.global-footer hr.no-margin {
+	margin:0;
+}
+/* global-footer classes end */
+
+/* page-sitters-drivers classes starts */
+.page-sitters-drivers {
+}
+@media only screen and (max-width: 1023px) {
+ .page-sitters-drivers .hero-image {
+ padding-bottom:0;
+}
+}
+/* how-sitter-works classes starts */
+.how-sitter-works {
+	text-align:center;
+	max-width: 61.25rem;
+	margin:0 auto;
+	padding:30px 0 0 0;
+}
+.how-sitter-works .row {
+	padding:18px 0 6px 0;
+}
+.how-sitter-works h2 {
+	padding-top:4px;
+	padding-bottom:7px;
+	margin:0;
+}
+.how-sitter-works label {
+	display:inline-block;
+	background:#0d99a9;
+	color:#fff;
+	padding:0px 15px;
+	font-weight:bold;
+	text-transform:uppercase;
+	font-size:15px;
+	line-height:26px;
+	cursor:auto;
+}
+.how-sitter-works h6 {
+	color:#0D99A9;
+	line-height:1.5;
+	font-weight:700;
+	padding:8px 0 3px 0;
+	margin:0;
+}
+.how-sitter-works p {
+	padding-right:0px;
+	padding-left:0px;
+	margin-bottom:33px;
+}
+@media only screen and (max-width: 640px) {
+ .how-sitter-works {
+ padding-left:0rem;
+ padding-right:0rem;
+ padding:27px 0 0 0;
+}
+ .how-sitter-works .row {
+ padding-bottom:13px;
+ padding-top:1px;
+}
+ .how-sitter-works h2 {
+ padding-top:2px;
+ padding-bottom:0px;
+}
+ .how-sitter-works h6 {
+ padding-top:10px;
+}
+ .how-sitter-works p {
+ margin-bottom:14px;
+}
+}
+@media only screen and (min-width: 641px) {
+ .how-sitter-works .columns:nth-child(2n+1) {
+ clear: left;
+}
+}
+/* how-sitter-works classes end */
+/* request-panels classes starts */
+.request-panels {
+	text-align:center;
+	max-width: 61.25rem;
+	margin:0 auto;
+}
+.request-panels .row {
+	background:#f5f2ed;
+	padding:30px 4.166665rem 41px 4.166665rem;
+}
+.request-panels .border-bg {
+	background:url(//images.uberapp.com/w/images/icons/icon-blue-line-dot.jpg) center repeat-y;
+	margin:0 0 14px 0;
+}
+.request-panels .bg-line {
+	display:none;
+}
+.request-panels h2 {
+	padding-top:0px;
+	padding-bottom:7px;
+	background:#f5f2ed;
+	margin:-10px 0 24px 0;
+}
+.request-panels h6 {
+	color:#0D99A9;
+	line-height:1.5;
+	font-weight:700;
+	padding:1px 0 3px 0;
+	margin:0;
+}
+.request-panels p {
+	padding-right:0px;
+	padding-left:0px;
+}
+.request-panels .columns p:last-child {
+	margin-bottom:0;
+}
+@media only screen and (max-width: 640px) {
+ .request-panels .border-bg {
+ background:none;
+}
+ .request-panels .bg-line {
+ background:url(//images.uberapp.com/w/images/icons/icon-blue-line-dot.jpg) center repeat-x;
+ width:33%;
+ height:1px;
+ overflow:hidden;
+ margin:27px auto 10px auto;
+ display:block;
+}
+ .request-panels {
+ padding-left:0rem;
+ padding-right:0rem;
+}
+ .request-panels .row {
+ padding:10px 0 10px 0;
+}
+ .request-panels h2 {
+ padding-top:23px;
+ padding-bottom:0px;
+}
+ .request-panels h6 {
+ padding-top:9px;
+}
+ .request-panels p {
+ margin-bottom:10px;
+}
+ .request-panels .fields {
+ padding-top:13px;
+}
+ .request-panels .fields input {
+ display:none;
+}
+}
+
+.request-panels .download-button {
+	text-align:center;
+	bottom:0;
+	left:0;
+	right:0;
+	display:none;
+}
+
+.request-panels .download-button .apple, .request-panels .download-button .android {
+	background:url(//images.uberapp.com/w/images/buttons/download-app-apple.png) 0 0 no-repeat;
+	width:146px;
+	height:46px;
+	display:inline-block;
+	text-indent:-99999px;
+}
+.request-panels .download-button .android {
+	background-image:url(//images.uberapp.com/w/images/buttons/download-app-android.png);
+}
+@media only screen and (max-width: 1024px) {
+ .request-panels .download-button {
+ display:block;
+}
+}
+/* request-panels classes end */
+/* sitters apply classes starts */
+.sitters-apply{
+	position:relative;
+	z-index:0;
+	background:url(//images.uberapp.com/w/images/hero/1920_ds_getstarted.jpg) center no-repeat;
+	-webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+	text-align:center;
+}
+.sitters-apply .row {
+	 padding: 50px 20px;
+}
+.sitters-apply {
+}
+.sitters-apply .row-02 {
+	padding:17px 0 40px 0;
+}
+.sitters-apply h6 {
+	color:#0094a4;
+	line-height:1.5;
+	font-weight:700;
+	padding:1px 0 0 0;
+	margin:0;
+}
+.sitters-apply .row-02 .blue-panel {
+	margin-top:13px;
+}
+
+@media only screen and (max-width: 640px) {
+ .sitters-apply .row-02 {
+ text-align:center;
+ padding-bottom:23px;
+}
+
+ .sitters-apply .apply-mobile-row {
+ display:block;
+ text-align:center;
+ padding-bottom:10px;
+}
+}
+/* sitters apply classes end */
+/* testimonials classes starts */
+.testimonials {
+	text-align:center;
+	max-width: 61.25rem;
+	margin:0 auto;
+}
+.testimonials .row {
+	background:#f5f2ed;
+	padding:1px 0 50px 0;
+}
+.testimonials h2 {
+	padding-top:21px;
+	padding-bottom:7px;
+	background:#f5f2ed;
+	margin:0;
+}
+.testimonials h6 {
+	line-height:1.5;
+	font-weight:300;
+	padding:5px 0 3px 0;
+	margin:0;
+	color:#000000;
+}
+.testimonials h6 .name {
+	display:block;
+	font-weight:700;
+}
+@media only screen and (max-width: 640px) {
+ .testimonials {
+ padding-left:0rem;
+ padding-right:0rem;
+}
+ .testimonials .row {
+ padding-bottom:24px;
+ padding-top:11px;
+}
+ .testimonials h2 {
+ padding-top:23px;
+ padding-bottom:0px;
+}
+ .testimonials h6 {
+ padding-top:9px;
+}
+}
+/* testimonials classes end */
+/* howmuch-cost classes starts */
+.howmuch-cost {
+	text-align:center;
+	max-width: 61.25rem;
+	margin:0 auto;
+	background:#f5f2ed;
+}
+.howmuch-cost .row {
+	padding:18px 10px 40px 10px;
+}
+.howmuch-cost .row .columns {
+	padding-left: 0.625rem;
+	padding-right: 0.625rem;
+}
+.howmuch-cost .row .columns .panel {
+	background:#E0DCD9;
+	padding:1.5rem;
+	border:0;
+}
+.howmuch-cost h2 {
+	padding-top:20px;
+	padding-bottom:2px;
+	background:#f5f2ed;
+	margin:0;
+}
+.howmuch-cost h6 {
+	color: #0D99A9;
+	line-height:1.5;
+	font-weight:700;
+	padding:0 0 5px 0;
+	margin:0;
+}
+.howmuch-cost p {
+	padding-bottom:3px;
+}
+.howmuch-cost p span {
+	color:#585454;
+}
+@media only screen and (max-width: 640px) {
+ .howmuch-cost {
+ padding-left:0rem;
+ padding-right:0rem;
+}
+ .howmuch-cost .row {
+ padding-bottom:24px;
+ padding-top:11px;
+}
+ .howmuch-cost h2 {
+ padding-top:23px;
+ padding-bottom:0px;
+}
+ .howmuch-cost h6 {
+ padding-top:9px;
+}
+}
+/* howmuch-cost classes end */
+
+/* page-sitters-drivers classes end */
+
+/* page-title classes starts */
+.page-title {
+	background:#d7d3d1 url(//images.uberapp.com/w/images/hero/sitters.jpg) center no-repeat;
+	padding:1em;
+	color:#fff;
+	font-size:1.25rem;
+	font-weight:700;
+}
+/* page-title classes end */
+
+/* about-us-panels starts */
+.about-us-intro{
+	background:#f5f2ed;
+	padding:21px 44px 3px 44px;
+	text-align:center;
+}
+.about-us-intro h6{
+	font-size:1.1rem;
+	font-weight:600;
+	padding-bottom:15px;
+}
+.about-us-intro p{
+	line-height:2.0375;
+}
+@media only screen and (max-width: 640px) {
+	.about-us-intro{
+		padding-right:0px;
+		padding-left:0px;
+	}
+}
+/* about-us-panels end */
+
+/* founders-list starts */
+.founders-list{
+	text-align:center;
+	padding:17px 0 60px 0;
+}
+.founders-list h2{
+	padding-bottom:12px;
+}
+.founders-list .border-bg {
+	background:url(//images.uberapp.com/w/images/icons/icon-blue-line-dot.jpg) center repeat-y;
+}
+.founders-list .tile{
+	padding:0 31px;
+}
+.founders-list .tile p{
+	margin:0;
+}
+.founders-list h6{
+	color:#0d99a9;
+    font-weight:700;
+	line-height:1.5;
+	padding-bottom:11px;
+	padding-top:11px;
+}
+.founders-list h6 small{
+	color:#0d99a9;
+    font-weight:500;
+	line-height:1.5;
+	display:block;
+	font-size:0.875rem;
+}
+@media only screen and (max-width: 640px) {
+ .founders-list .border-bg {
+ 	background:none;
+  }
+  .founders-list .tile{
+	padding:0 0;
+   }
+}
+/* founders-list  end */
+
+/* news panels starts */
+.news-list{}
+.news-list .news{
+	background:#fff;
+	padding:12px 30px 30px 30px;
+}
+.news-list .news dl{
+	padding-bottom:27px;
+}
+.news-list .news dt{
+	color:#0d99a9;
+    font-size:1.875rem;
+    font-weight:300;
+	padding-bottom:2px;
+}
+.news-list .news dd{
+	padding-bottom:10px;
+}
+.news-list .news dt{
+	border-top:1px solid #b2aeae;
+	padding-top:18px;
+}
+.news-list .news dl:first-child dt{
+	border-top:0;
+}
+.news-list .bold{
+	font-weight:bold;
+	font-size:0.75rem;
+	padding-bottom:2px;
+}
+.news-list p, .news-list h2 {
+	margin:0;
+	padding:0;
+}
+.news-list h2 {
+	font-size:1rem;
+	font-weight:bold;
+}
+.news-list h2 a {
+	color:#e85683;
+}
+.news-list h2 a:hover {
+	text-decoration:underline;
+}
+@media only screen and (max-width: 640px) {
+ .news-list .news {
+	 padding:20px 0px;
+	}
+}
+/* news panels end */
+
+/* contactus panel starts */
+.contactus .contactus-padding{
+	background:#fff;
+	padding:18px 20px 32px 35px;
+}
+.contactus h2{
+	padding-bottom:12px;
+}
+.contactus h6 {
+	font-weight:600;
+}
+.contactus a{
+	color:#585454;
+}
+.contactus .social {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+.contactus .social li a {
+	background:url(../icon-FB.png) 0 center no-repeat;
+	line-height:50px;
+	padding:0 0 0 50px;
+	display:inline-block;
+}
+.contactus .social li a.icon-twitter {
+	background-image:url(../icon-twitter.png);
+}
+.contactus input[type="submit"]{
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	margin-top:4px;
+	padding:0 36px;
+	font-size:1rem;
+	font-weight:500;
+}
+/* contactus panel end */
+
+/* International Telephone Input assets classes starts */
+.iti-flag {
+	background-image: url("//images.uberapp.com/w/plugins/intl-tel-input-master/build/img/flags.png");
+}
+/* International Telephone Input assets classes end */
+
+/* Tablet classes starts */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+ .how-sitter-works p,
+ .request-panels h6,
+ .request-panels p,
+ .howmuch-cost h6,
+ .howmuch-cost p,
+ .drivers-sitters .content p,
+ .drivers-sitters .blue-panel dd,
+ .help-box h6,
+ .help-things h6,
+ .help-things p,
+ .sitters-drivers p{
+   font-size: 1.0625rem;
+ }
+ .howmuch-cost h2{
+ 	padding-top:50px;
+ }
+ .drivers-sitters .blue-panel dd{
+   line-height:1.5;
+   background-position:23px 10px;
+ }
+ .global-footer .row.logos .inline-list li{
+	float:none;
+	display:inline-block;
+  }
+  .global-footer .row.logos .columns{
+ 	padding:0;
+  }
+ .sitters-drivers .row{
+	background-position:left top
+  }
+}
+/* Tablet classes end */
+
+/* hero-image-v2 classes starts */
+.hero-image-v2{
+	position:relative;
+	z-index:1;
+	background:url(//images.uberapp.com/w/images/hero/1920_home_hero1_1059_bk.jpg) center no-repeat;
+	-webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+	text-align:center;
+}
+.hero-image-v2 .content{
+	position:relative;
+	z-index:0;
+}
+.hero-image-v2 h1{
+	position:absolute;
+	text-align:center;
+	bottom:140px;left:0;right:0;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:700;
+	font-size:40px;
+	line-height:46px;
+}
+.hero-image-v2 h1 small{
+	font-weight:400;
+	font-size:20px;
+	color:#FFFFFF;
+	line-height:46px;
+	position:relative;
+	z-index:0;
+}
+.hero-image-v2 h1 small::before {
+    background-color: #ececed;
+    content: "";
+     height: 1px;
+    left: -45px;
+    position: absolute;
+    top: 15px;
+    width: 34px;
+}
+.hero-image-v2 h1 small::after {
+    background-color: #ececed;
+    content: "";
+     height: 1px;
+    right: -45px;
+    position: absolute;
+    top: 15px;
+    width: 34px;
+}
+.hero-image-v2 .fields{
+	background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
+    background: rgba(255, 255, 255, .75);
+	width:388px;
+	margin:0 auto;
+	position:absolute;
+	right:0;left:0;
+	bottom:53px;
+}
+.hero-image-v2 .fields input{
+	-webkit-border-radius: 4px 0 0 4px;
+     border-radius: 4px 0 0 4px;
+	 border:1px solid #c0bebf;
+	 border-right-width:0;
+	 width:200px;
+}
+.hero-image-v2 .fields .button{
+	-webkit-border-radius: 0 4px 4px 0;
+	border-radius: 0 4px 4px 0;
+	line-height: 2.3rem;
+    position:relative;
+    top:1px;
+    z-index:0;
+	left:-5px;
+	background:#e65783;
+	color:#ffffff;
+}
+.hero-image-v2 .download-button {
+	text-align:center;
+	position:absolute;
+	bottom:-20px;
+	left:0;
+	right:0;
+	display:none;
+}
+
+.hero-image-v2 .promo-image {
+	position:absolute;
+	right:5px;
+	bottom:5px;
+	width:160px;
+	height:160px;
+}
+
+.covid-19 h6{
+	margin-bottom: 0px;
+	padding-top:6px;
+	padding-bottom:6px;
+	font-family:'Open Sans', sans-serif;
+	text-align:center;
+	background:#e65783;
+	color:#ffffff;
+}
+.covid-19 h6 a{
+	color:#008CBA;
+	font-weight:500;
+}
+
+
+@media only screen and (max-width: 1023px) {
+	.covid-19 h6{
+		padding-top:22px;
+	}
+}
+
+@media only screen and (max-width: 1023px) {
+	.hero-image-v2 .download-button{
+		display:block;
+	}
+}
+.hero-image-v2 .download-button .apple,
+.hero-image-v2 .download-button .android {
+	background:url(//images.uberapp.com/w/images/buttons/download-app-apple.png) 0 0 no-repeat;
+	width:146px;
+	height:46px;
+	display:inline-block;
+	text-indent:-99999px;
+}
+.hero-image-v2 .download-button .android {
+	background-image:url(//images.uberapp.com/w/images/buttons/download-app-android.png);
+}
+@media only screen and (max-width: 400px) {
+ .hero-image-v2 {
+	height:210px;
+ }
+}
+@media only screen and (max-width: 640px) {
+ .hero-image-v2 h1{
+		bottom:40px;
+		font-size:1.7rem;
+		line-height:1.1;
+	}
+	.hero-image-v2 h1 small{
+		font-size:0.75rem;
+		line-height:26px;
+	}
+	.hero-image-v2 h1 small::before {
+		left:-23px;
+		top:8px;
+		width:17px;
+	}
+	.hero-image-v2 h1 small::after {
+		right:-23px;
+		top:8px;
+		width:17px;
+	}
+	
+   .hero-image-v2 .promo-image {
+		width:90px;
+		height:90px;
+    }
+}
+/* hero-image-v2 classes end */
+
+/* how-uber-works classes starts */
+.how-uber-works{
+	text-align:center;
+	background:#f3efe8;
+}
+.how-uber-works h2 {
+	padding-top:14px;
+	padding-bottom:4px;
+	margin:0;
+	font-family:'Open Sans', sans-serif;
+	font-weight:400;
+	font-size:1.875rem;
+}
+.how-uber-works .row.works{
+	padding:15px 0 17px 0;
+}
+.how-uber-works h6 {
+	color:#0d99a9;
+	line-height:1.25;
+	font-weight:400;
+	padding:0 0 3px 0;
+	margin:0 auto;
+    font-size: 1.3rem;	
+	max-width:266px;
+}
+.how-uber-works p {
+	padding-right:0px;
+	padding-left:0px;
+	font-weight: 400;
+    font-size: 1rem;	
+	color:#333333;
+}
+.how-uber-works .works .columns::after {
+    background:url(//images.uberapp.com/w/images/icons/arrow.png) 0 0 no-repeat;
+	width:43px;
+	height:33px;
+	position:absolute;
+	right:-25px;
+	top:30px;
+	content: "";
+}
+.how-uber-works .works .medium-4:last-child.columns::after {
+   display:none;
+}
+@media only screen and (max-width: 1023px) {
+	.how-uber-works h2 {
+		padding-top:30px;
+	}
+}
+@media only screen and (max-width: 640px) {
+	.how-uber-works .works .columns::after{
+		display:none;
+	}
+	.how-uber-works h6 {
+		max-width:inherit;
+	}
+}
+.page-sitters-drivers .how-uber-works{
+	background:#cfebee;
+}
+.page-sitters-drivers .how-uber-works{
+	padding:10px 0 20px 0;
+}
+.page-sitters-drivers .how-uber-works h2 {
+	padding-bottom:15px;
+}
+.page-sitters-drivers .how-uber-works h3{
+	padding-top:14px;
+	padding-bottom:7px;
+	font-size:1.375rem;
+	color:#666666;
+}
+.page-sitters-drivers .how-uber-works dl{
+	display: inline-block;
+    list-style:none;
+    margin:7px auto 19px auto;
+    text-align: left;
+    width:auto;
+}
+.page-sitters-drivers .how-uber-works dt{
+	font-family:'Open Sans', sans-serif;
+	font-weight:400;
+	font-size:1.875rem;
+	text-align:center;
+	padding-bottom:15px;
+}
+.page-sitters-drivers .how-uber-works dd{
+	background:url(//images.uberapp.com/w/images/icons/checkmark.png) left 12px no-repeat;
+	padding:14px 0 8px 44px;
+	font-size:1.125rem;
+	color:#666666;
+}
+.page-sitters-drivers .how-uber-works .works .columns::after{
+		display:none;
+}
+/* help-things classes end */
+
+/* where-you-go classes starts */
+.where-you-go{
+	position:relative;
+	z-index:0;
+	background:url(//images.uberapp.com/w/images/hero/1920_home_go.jpg) center no-repeat;
+	-webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+	text-align:center;
+}
+.where-you-go .row {
+    padding: 50px 20px;
+}
+.where-you-go {
+	width: 100%;
+	height:auto;
+}
+.where-you-go .content{
+	position:relative;
+	z-index:0;
+}
+.where-you-go .content-box {
+	min-width:23.75rem;
+ 	background:rgba(255, 255, 255, 0.85);
+ 	padding:21px 36px 18px 36px;
+	text-align:center;
+}
+.where-you-go .content-box h2 {
+	line-height:1.2;
+	padding:5px 0 13px 0;
+	font-family:'Open Sans', sans-serif;
+	font-weight:400;
+	font-size:1.875rem;
+	max-width:260px;
+	margin:0 auto;
+}
+.where-you-go .content-box ul{
+	list-style:none;
+	margin-left:0;
+}
+.where-you-go .content-box ul li{
+	background:url(//images.uberapp.com/w/images/icons/soccerball.png) center top no-repeat;
+	padding:38px 0 7px 0;
+	margin-top:10px;
+	font-family:'Open Sans', sans-serif;
+	font-weight:400;
+	font-size:1rem;
+	line-height:1.3;
+}
+.where-you-go .content-box ul li.icon-01{
+	background-image:url(//images.uberapp.com/w/images/icons/soccerball@2x.png);
+}
+.where-you-go .content-box ul li.icon-02{
+	background-image:url(//images.uberapp.com/w/images/icons/bandpractice@2x.png);
+}
+.where-you-go .content-box ul li.icon-03{
+	background-image:url(//images.uberapp.com/w/images/icons/preschoolblocks@2x.png);
+}
+@media only screen and (max-width: 640px) {
+	.where-you-go .content-box {
+		min-width:inherit;
+		max-width:23.75rem;
+	}
+}
+/* .where-you-go classes end */
+
+
+/* chrysler-promo classes starts */
+.chrysler-promo{
+	position:relative;
+	z-index:0;
+	background:url(//images.uberapp.com/w/images/hero/1920_home_chrysler_promo6.jpg) center no-repeat;
+	-webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+	text-align:center;
+}
+.chrysler-promo .row {
+    padding: 50px 20px;
+}
+.chrysler-promo {
+	width: 100%;
+	height:auto;
+}
+.chrysler-promo .content{
+	position:relative;
+	z-index:0;
+}
+.chrysler-promo .content-box {
+	min-width:23.75rem;
+ 	background:rgba(255, 255, 255, 0.80);
+ 	padding:18px 30px 15px 30px;
+	text-align:center;
+}
+.chrysler-promo .content-box h2 {
+	line-height:1.2;
+	padding:5px 0 13px 0;
+	font-family:'Open Sans', sans-serif;
+	font-weight:400;
+	font-size:1.875rem;
+	max-width:260px;
+	margin:0 auto;
+}
+.chrysler-promo .content-box ul{
+	list-style:none;
+	margin-left:0;
+}
+.chrysler-promo .content-box ul li{
+	background:url(//images.uberapp.com/w/images/icons/chrysler_logo1%402x.png) center top no-repeat;
+	padding:80px 0 6px 0;
+	margin-top:2px;
+	font-family:'Open Sans', sans-serif;
+	font-weight:400;
+	font-size:1rem;
+	line-height:1.3;
+}
+.chrysler-promo .content-box ul li.icon-01{
+	background-image:url(//images.uberapp.com/w/images/icons/chrysler_logo1%402x.png);
+}
+@media only screen and (max-width: 640px) {
+	.where-you-go .content-box {
+		min-width:inherit;
+		max-width:23.75rem;
+	}
+}
+/* chrysler-promo classes end */
+
+
+/* kids-safety classes starts */
+.kids-safety{
+	text-align:center;
+	background:#cfebee;
+}
+.kids-safety h2 {
+	padding-top:14px;
+	padding-bottom:15px;
+	margin:0;
+	font-family:'Open Sans', sans-serif;
+	font-weight:400;
+	font-size:1.875rem;
+}
+.kids-safety .row{
+	padding:10px 0 42px 0;
+	text-align:center;
+}
+.kids-safety h3{
+	padding-top:14px;
+	padding-bottom:7px;
+	font-size:1.25rem;
+	color:#666666;
+}
+.kids-safety ul{
+	display: inline-block;
+    list-style:none;
+    margin:7px auto 19px auto;
+    text-align: left;
+    width:auto;
+}
+.kids-safety ul li{
+	background:url(//images.uberapp.com/w/images/icons/checkmark.png) left 12px no-repeat;
+	padding:14px 0 8px 44px;
+	font-size:1.125rem;
+	font-weight:600;
+	color:#666666;
+}
+.kids-safety h4{
+	padding-top:14px;
+	padding-bottom:4px;
+	margin:0;
+	font-family:'Open Sans', sans-serif;
+	font-weight:400;
+	font-size:1.25rem;
+}
+.kids-safety h4,
+.kids-safety h4 a{
+	color:#e65783;
+}
+/* kids-safety classes end */
+
+/* testimonials-v2 classes starts */
+.testimonials-v2{
+	background:#f3efe8;
+}
+.testimonials-v2 .row {
+	padding:10px 0 45px 0;
+}
+.testimonials-v2 h2 {
+	background:#f3efe8;
+	padding-top:20px;
+	padding-bottom:11px;
+	margin:0;
+	font-family:'Open Sans', sans-serif;
+	font-weight:400;
+	font-size:1.875rem;
+	text-align:center;
+}
+.testimonials-v2 h2 span{
+	background:url(//images.uberapp.com/w/images/icons/heart.png) 20px 12px no-repeat;
+	display:inline-block;
+	padding-left:25px;
+	padding-right:25px;
+}
+.testimonials-v2 .row .quote{
+	background:#ffffff url(//images.uberapp.com/w/images/icons/icon-quote.jpg) 0 0 no-repeat;
+	padding:64px 40px 23px 36px;
+	margin-bottom: 1.25rem;
+}
+.testimonials-v2 .row .quote p{
+	font-size:1rem;
+	font-style:italic;
+	color:#363636;
+}
+.testimonials-v2 .row .quote .user{
+	position:relative;
+	z-index:0;
+	padding-left:66px;
+	font-size:1rem;
+	min-height:45px;
+}
+.testimonials-v2 .row .quote .user label{
+	font-size:0.875rem;
+	color:#949494;
+	font-weight: 600;
+    line-height: 2.8125;
+	cursor:auto;
+}
+.testimonials-v2 .row .quote .user img{
+	position:absolute;
+	left:0;top:0;
+	-webkit-box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);
+box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);
+-webkit-border-radius: 50px 50px 50px 50px;
+border-radius: 50px 50px 50px 50px;
+}
+/* testimonials-v2 classes end */
+
+/* howmuch-cost-v2 classes starts */
+.howmuch-cost-v2{
+	text-align:center;
+	padding-bottom:28px;
+}
+.howmuch-cost-v2 .row {
+	padding:10px 0 14px 0;
+}
+.howmuch-cost-v2 h2 {
+	padding-top:18px;
+	padding-bottom:9px;
+	margin:0;
+	font-family:'Open Sans', sans-serif;
+	font-weight:400;
+	font-size:1.875rem;
+}
+.howmuch-cost-v2 .row .box{
+	background:#ebf7f8;
+	padding:0 30px 24px 30px;
+	margin-bottom: 1.25rem;
+}
+.howmuch-cost-v2 .row .box p{
+	font-size:0.875rem;
+	color:#333333;
+	font-family:'Open Sans', sans-serif;
+}
+.howmuch-cost-v2 .row .box h3{
+	font-size:4.8rem;
+	color:#3facb7;
+	font-weight:400;
+	border-bottom:1px solid #3facb7;
+	font-family:'Open Sans', sans-serif;
+	letter-spacing: -4px;
+	margin-top:0;
+	line-height:normal;
+	position: relative;
+    top: -2px;
+    z-index: 0;
+	padding-bottom:3px;
+	margin-bottom:14px;
+	margin-left:-15px;
+	margin-right:-15px;
+}
+.howmuch-cost-v2 .row .box h3 small{
+	font-size:0.875rem;
+	color:#3facb7;
+	font-weight:400;
+	display:block;
+	text-transform:uppercase;
+	letter-spacing: normal;
+	line-height:normal;
+	position: relative;
+    top: -14px;
+    z-index: 0;
+	margin:0 -5px;
+}
+.howmuch-cost-v2 .row .box h3 sup{
+	font-size:2.5rem;
+	position: relative;
+    top:-28px;
+	left:-3px;
+    z-index: 0;
+}
+@media only screen and (max-width: 1023px) {
+	.howmuch-cost-v2 .row .box h3{
+		font-size:3.3rem;
+		padding-top:5px;
+	}
+	.howmuch-cost-v2 .row .box h3 small{
+		padding-top:7px;
+	}
+	.howmuch-cost-v2 .row .box h3 sup{
+		top:-9px;
+	}
+}
+.howmuch-cost-v2 .fields{
+	background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
+    background: rgba(255, 255, 255, .75);
+	width:388px;
+	margin:0 auto;
+}
+.howmuch-cost-v2 .fields input{
+	-webkit-border-radius: 4px 0 0 4px;
+     border-radius: 4px 0 0 4px;
+	 border:1px solid #c0bebf;
+	 border-right-width:0;
+	 width:200px;
+}
+.howmuch-cost-v2 .fields .button{
+	-webkit-border-radius: 0 4px 4px 0;
+	border-radius: 0 4px 4px 0;
+	line-height: 2.3rem;
+    position:relative;
+    top:1px;
+	z-index:0;
+	left:-5px;
+	background:#e65783;
+	color:#ffffff;
+}
+.howmuch-cost-v2 .download-button {
+	text-align:center;
+	display:none;
+}
+@media only screen and (max-width: 1023px) {
+	.howmuch-cost-v2 .download-button{
+		display:block;
+	}
+}
+.howmuch-cost-v2 .download-button .apple,
+.howmuch-cost-v2 .download-button .android {
+	background:url(//images.uberapp.com/w/images/buttons/download-app-apple.png) 0 0 no-repeat;
+	width:146px;
+	height:46px;
+	display:inline-block;
+	text-indent:-99999px;
+}
+.howmuch-cost-v2 .download-button .android {
+	background-image:url(//images.uberapp.com/w/images/buttons/download-app-android.png);
+}
+/* howmuch-cost-v2 classes end */
+
+/* howtoget-started classes starts */
+.howtoget-started{
+	position:relative;
+	z-index:0;
+	background:url(//images.uberapp.com/w/images/hero/tweb_ds_getstarted.jpg) center no-repeat;
+	-webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+	text-align:center;
+}
+.howtoget-started .row{
+    padding: 50px 20px;
+}
+.howtoget-started r{
+	width: 100%;
+	height:auto;
+}
+.howtoget-started .content{
+	position:relative;
+	z-index:0;
+}
+/* howtoget-started classes end */
+
+/* drivers-sitters classes starts */
+.drivers-sitters .content{
+	text-align:left;
+	padding-top:40px;
+}
+.drivers-sitters .content,
+.drivers-sitters .content h2,
+.drivers-sitters .content h3,
+.drivers-sitters .content h6{
+	color:#FFFFFF;
+}
+.drivers-sitters h2 {
+	line-height:1.2;
+	padding:5px 0 13px 0;
+	font-family:'Open Sans', sans-serif;
+	font-weight:400;
+	font-size:1.875rem;
+}
+.drivers-sitters h3 {
+	padding-top:14px;
+	padding-bottom:7px;
+	font-size:1.25rem;
+	color:#666666;
+}
+.drivers-sitters ul{
+	display: inline-block;
+    margin:7px auto 19px 18px;
+    text-align: left;
+    width:auto;
+	list-style:decimal;
+}
+.drivers-sitters ul li{
+	/*background:url(//images.uberapp.com/w/images/icons/checkmark.png) left 12px no-repeat;*/
+	padding:7px 0 4px 0;
+	font-size:1rem;
+	color:#fff;
+}
+
+@media only screen and (min-width: 768px) {
+	.sitters-apply .drivers-sitters .blue-panel{
+	margin-top:50px;
+}
+}
+/* drivers-sitters classes end */
+
+/* become-a-uber classes starts */
+.become-a-uber{
+	position:relative;
+	z-index:0;
+	background:url(//images.uberapp.com/w/images/hero/1920_ds_hero.jpg) center no-repeat;
+	-webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+	text-align:center;
+}
+.become-a-uber .box {
+	background:rgba(255, 255, 255, 0.85);
+ 	padding:23px 20px 20px 20px;
+	text-align:left;
+	margin:50px 0;
+}
+
+.become-a-uber .box .signuprslt {
+	display: none;
+}
+
+.become-a-uber .box .signuprslt h1 {
+	color: #585454;
+}
+.become-a-uber .box h1{
+	padding-top:14px;
+	padding-bottom:4px;
+	margin:0;
+	font-family:'Open Sans', sans-serif;
+	font-weight:400;
+	font-size:1.9rem;
+	color:#333333;
+	line-height:1.15;
+	text-align:center;
+}
+.become-a-uber .box h2 {
+	padding-top:14px;
+	padding-bottom:4px;
+	margin:0;
+	font-family:'Open Sans', sans-serif;
+	font-weight:300;
+	font-size:1.5rem;
+	text-align:center;
+	line-height:1.15;
+}
+.become-a-uber .box .apply{
+	text-align:center;
+}
+.become-a-uber .box .apply .button{
+	display:block;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	line-height:2.75rem;
+	background:#e65783;
+	color:#ffffff;
+	max-width:299px;
+	margin:0 auto;
+	font-size:1.25rem;
+}
+.become-a-uber .box .apply small{
+	font-size:0.875rem;
+	color:#333333;
+	display:block;
+	padding-top:30px;
+}
+.become-a-uber .box .apply small a{
+	color:#e65783;
+}
+.become-a-uber .box .apply-form{
+	padding:30px 0;
+}
+.become-a-uber .box .apply-form .row{
+	background:#ffffff;
+	/*-webkit-box-shadow: 0 0 1px 1px rgba(0,0,0,0.1);
+	box-shadow: 0 0 1px 1px rgba(0,0,0,0.1);*/
+	margin:4px 0;
+	padding:10px 0 12px 0;
+}
+.become-a-uber .box .apply-form .row label{
+	color:#585454;
+	text-transform:uppercase;
+	cursor:auto;
+	font-size:0.6875rem;
+	display:block;
+	font-weight:600;
+}
+.become-a-uber .box .apply-form .row input,
+.become-a-uber .box .apply-form .row select,
+.become-a-uber .box .apply-form .row textarea{
+	color:#585454;
+	font-size:1rem;
+	font-weight:500;
+	border:0;
+	padding:0;
+	margin:5px 0;
+	color:#000;
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+	height:auto;
+	background:none;
+}
+.become-a-uber .box .apply-form .row select{
+	position:relative;
+	z-index:0;
+	left:-3px;
+}
+.become-a-uber .box .apply-form .row select option{
+	padding:0;
+}
+.become-a-uber ::-webkit-input-placeholder {
+	color:#000;
+	font-size:1rem;
+}
+.become-a-uber ::-moz-placeholder {
+	color:#000;
+	font-size:1rem;
+} /* firefox 19+ */
+.become-a-uber :-ms-input-placeholder {
+	color:#000;
+	font-size:1rem;
+} /* ie */
+.become-a-uber input:-moz-placeholder {
+	color:#000;
+	font-size:1rem;
+}
+@media only screen and (min-width: 768px) {
+.become-a-uber .box .apply-form .row .columns:nth-child(2){
+	background:url(//images.uberapp.com/w/images/icons/apply-form-separator-line-bg.jpg) left center no-repeat;
+}
+}
+@media only screen and (max-width: 640px) {
+	.become-a-uber .box .apply-form .row .columns:nth-child(2){
+	}
+	
+.become-a-uber .box .apply-form .row{
+	background:none;
+	margin:0;
+	padding:0;
+}
+.become-a-uber .box .apply-form .row .columns{
+	background:#ffffff;
+	margin-bottom:4px;
+	padding-top:10px;
+	padding-bottom:12px;
+}
+
+.become-a-uber .box .apply-form .row label{
+		margin-top:5px;
+	}
+	.become-a-uber .box .apply-form .row input,
+.become-a-uber .box .apply-form .row select,
+.become-a-uber .box .apply-form .row textarea{
+		margin-bottom:5px;
+	}
+	.become-a-uber .box h1{
+		/*font-size:1.25rem;*/
+	}
+	.become-a-uber .box h2 {
+		/*font-size:0.9375rem;*/
+	}
+	/*
+	.become-a-uber .box .apply-form .row{
+		-webkit-box-shadow: none !important;
+		-moz-box-shadow: none !important;
+		box-shadow: none !important;
+		margin:0;
+		padding:0;
+	}
+	
+	.become-a-uber .box .apply-form .row:first-child{
+		padding-top:15px;
+	}
+	.become-a-uber .box .apply-form .row:last-child{
+		padding-bottom:15px;
+	}*/
+}
+/* become-a-uber classes end */
+/* covid-services-top classes starts */
+.covid-services-top {
+	position:relative;
+	z-index:0;
+	background:url(//images.uberapp.com/w/images/hero/web_covid_hero.jpg) center top no-repeat;
+	-webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+	text-align:center;
+}
+.covid-services-top .box {
+ 	padding:100px 20px 100px 20px;
+	text-align:center;
+	margin:50px 0;
+}
+.covid-services-top .box h1{
+	padding-top:14px;
+	padding-bottom:4px;
+	margin:0;
+	font-family:'Open Sans', sans-serif;
+	font-weight:700;
+	font-size:40px;
+	color:#ffffff;
+	line-height:46px;
+	text-align:center;
+}
+.covid-services-top .box h2 {
+	padding-top:14px;
+	padding-bottom:4px;
+	margin:0;
+	font-family:'Open Sans', sans-serif;
+	font-weight:600;
+	font-size:30px;
+	color:#cfeaee;
+	text-align:center;
+	line-height:26px;
+}
+.covid-services-top .box h3{
+	padding-top:14px;
+	padding-bottom:4px;
+	margin:0;
+	font-family:'Open Sans', sans-serif;
+	font-weight:700;
+	font-size:20px;
+	color:#ffffff;
+	line-height:26px;
+	text-align:center;
+}
+.covid-services-top ::-webkit-input-placeholder {
+	color:#000;
+	font-size:1rem;
+}
+.covid-services-top ::-moz-placeholder {
+	color:#000;
+	font-size:1rem;
+} /* firefox 19+ */
+.covid-services-top :-ms-input-placeholder {
+	color:#000;
+	font-size:1rem;
+} /* ie */
+.covid-services-top input:-moz-placeholder {
+	color:#000;
+	font-size:1rem;
+}
+/* covid-services-top classes end */
+/* covid-blue-panel classes starts */
+.covid-blue-panel {
+	padding-top:20px;
+	padding-bottom:20px;
+	position:relative;
+	z-index:0;
+	background:#cfebee;
+	-webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+	text-align:center;
+}
+
+.covid-blue-panel h1{
+	padding-top:14px;
+	padding-bottom:4px;
+	margin:0;
+	font-family:'Open Sans', sans-serif;
+	font-weight:700;
+	font-size:35px;
+	color:#545454;
+	text-align:center;
+}
+.covid-blue-panel h3{
+	padding-top:14px;
+	padding-bottom:4px;
+	margin:0;
+	font-family:'Open Sans', sans-serif;
+	font-weight:400;
+	font-size:20px;
+	color:#000000;
+	text-align:left;
+}
+.covid-blue-panel h4{
+	padding-top:14px;
+	padding-bottom:4px;
+	margin:0;
+	font-family:'Open Sans', sans-serif;
+	font-weight:600;
+	font-size:18px;
+	color:#000000;
+	text-align:left;
+}.covid-blue-panel h6 {
+	color:#0e99a9;
+	line-height:1.25;
+	font-weight:700;
+	padding:0 0 3px 0;
+	margin:0 auto;
+    font-size: 25px;	
+	max-width:266px;
+}
+.covid-blue-panel ::-webkit-input-placeholder {
+	color:#000;
+	font-size:1rem;
+}
+.covid-blue-panel ::-moz-placeholder {
+	color:#000;
+	font-size:1rem;
+} /* firefox 19+ */
+.covid-blue-panel :-ms-input-placeholder {
+	color:#000;
+	font-size:1rem;
+} /* ie */
+.covid-blue-panel input:-moz-placeholder {
+	color:#000;
+	font-size:1rem;
+}
+.covid-infograph-global, .covid-infograph-device {
+	display:none;
+}
+@media only screen and (min-width: 1024px) {
+ .covid-infograph-global {
+ display: block;
+}
+}
+@media only screen and (max-width: 1023px) {
+ .covid-infograph-device {
+ display: block;
+}
+}
+
+/* covid-blue-panel classes end */
+/* covid-pink-panel classes starts */
+.covid-pink-panel {
+	padding-top:20px;
+	padding-bottom:20px;
+	position:relative;
+	z-index:0;
+	background:#e65783;
+	-webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+	text-align:center;
+}
+
+.covid-pink-panel h1{
+	padding-top:14px;
+	padding-bottom:4px;
+	margin:0;
+	font-family:'Open Sans', sans-serif;
+	font-weight:700;
+	font-size:25px;
+	color:#ffffff;
+	text-align:center;
+}
+/* covid-pink-panel classes end */
+/* covid-white-panel classes starts */
+.covid-white-panel {
+	padding-top:20px;
+	padding-bottom:20px;
+	position:relative;
+	z-index:0;
+	background:#ffffff;
+	-webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+	text-align:center;
+}
+
+.covid-white-panel h1{
+	padding-top:14px;
+	padding-bottom:4px;
+	margin:0;
+	font-family:'Open Sans', sans-serif;
+	font-weight:700;
+	font-size:35px;
+	color:#545454;
+	text-align:center;
+}
+.covid-white-panel h2{
+	padding-top:14px;
+	padding-bottom:4px;
+	margin:0;
+	font-family:'Open Sans', sans-serif;
+	font-weight:900;
+	font-size:30px;
+	color:#e65783;
+	text-align:center;
+}
+.covid-white-panel h3{
+	padding-top:14px;
+	padding-bottom:4px;
+	margin:0;
+	font-family:'Open Sans', sans-serif;
+	font-weight:400;
+	font-size:20px;
+	color:#000000;
+	text-align:left;
+}
+.covid-white-panel dl {
+	color:#00515a;
+	line-height:22px;
+	margin-bottom:16px;
+}
+.covid-white-panel dt{
+	padding:14px 0px 15px 44px;
+	font-family:'Open Sans', sans-serif;
+	font-weight:700;
+	font-size:22px;
+	background:url(//images.uberapp.com/w/images/icons/checkmark.png) left 12px no-repeat;
+	color:#545454;
+	text-align:left;	
+}
+/* covid-white-panel classes end */
+.hero-image-v2.innerpage h1{
+	text-align:left;
+	bottom:10%;left:10%;right:10%;
+}
+
+/* over writing the font with open sans starts */
+body,
+button,
+.button,
+select,
+.top-bar-section ul li > a,
+.pricing-table .title,
+.pricing-table .price,
+.tabs dd > a, .tabs .tab-title > a,
+.side-nav,
+.side-nav li.active > a:first-child:not(.button),
+.accordion .accordion-navigation > a, .accordion dd > a,
+h1, h2, h3, h4, h5, h6,
+.sub-nav dt,
+.sub-nav dd,
+.sub-nav li
+.label{
+  	font-family: 'Open Sans', Arial, sans-serif;
+}
+/* over writing the font with open sans end */
+
+/* faqs-list starts */
+.faqs-list{}
+.faqs-list .faqs-sections .section .questions,
+.faqs-list .faqs-sections .section .questions dl dd{
+	display:none;
+}
+.faqs-list .faqs-sections .section.open-section .questions,
+.faqs-list .faqs-sections .section .questions dl.open-question dd{
+	display:block;
+}
+.faqs-list .faqs-sections{
+	background:#fff;
+	padding:12px 30px 30px 30px;
+}
+.faqs-list .faqs-sections .section{
+	padding-bottom:27px;
+}
+.faqs-list .faqs-sections h2{
+	color:#0d99a9;
+    font-size:1.875rem;
+    font-weight:300;
+	padding-bottom:2px;
+}
+.faqs-list .faqs-sections dd{
+	padding-bottom:10px;
+	font-weight:300;
+}
+.faqs-list .faqs-sections h2{
+	border-top:1px solid #b2aeae;
+	padding-top:18px;
+}
+.faqs-list .faqs-sections .section:first-child h2{
+	border-top:0;
+}
+.faqs-list .faqs-sections .section .questions dl dt a {
+    color: #e85683;
+}
+/* faqs-list end */
+
+/* school-image-v2 classes starts */
+.school-image-v2{
+	position:relative;
+	z-index:1;
+	background:url(https://images.uberapp.com/w/images/hero/kids_school_istock000018097754_2.jpg) center no-repeat;
+	-webkit-background-size:cover;
+    	-moz-background-size:cover;
+    	-o-background-size:cover;
+    	background-size:cover;
+	text-align:center;
+}
+.school-image-v2 .content{
+	position:relative;
+	z-index:0;
+}
+.school-image-v2 h1{
+	position:absolute;
+	text-align:center;
+	bottom:100px;left:0;right:0;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:700;
+	font-size:40px;
+	line-height:46px;
+}
+.school-image-v2 h1 small{
+	font-weight:400;
+	font-size:20px;
+	color:#FFFFFF;
+	line-height:46px;
+	position:relative;
+	z-index:0;
+}
+.school-image-v2 h1 small::before {
+    	background-color: #ececed;
+    	content: "";
+     	height: 1px;
+    	left: -45px;
+    	position: absolute;
+    	top: 15px;
+    	width: 34px;
+}
+.school-image-v2 h1 small::after {
+	background-color: #ececed;
+	content: "";
+	height: 1px;
+	right: -45px;
+	position: absolute;
+	top: 15px;
+	width: 34px;
+}
+.school-image-v2 .fields{
+	background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
+        background: rgba(255, 255, 255, .75);
+	width:388px;
+	margin:0 auto;
+	position:absolute;
+	right:0;left:0;
+	bottom:53px;
+}
+.school-image-v2 .fields input{
+	-webkit-border-radius: 4px 0 0 4px;
+     	border-radius: 4px 0 0 4px;
+	border:1px solid #c0bebf;
+	border-right-width:0;
+	width:200px;
+}
+.school-image-v2 .fields .button{
+	-webkit-border-radius: 0 4px 4px 0;
+	border-radius: 0 4px 4px 0;
+	line-height: 2.3rem;
+    	position:relative;
+    	top:1px;
+    	z-index:0;
+	left:-5px;
+	background:#e65783;
+	color:#ffffff;
+}
+.school-image-v2 .download-button {
+	text-align:center;
+	position:absolute;
+	bottom:-20px;
+	left:0;
+	right:0;
+	display:none;
+}
+
+.school-image-v2 .promo-image {
+	position:absolute;
+	right:5px;
+	bottom:5px;
+	width:160px;
+	height:160px;
+}
+
+@media only screen and (max-width: 640px) {
+	.school-image-v2 h1{
+		bottom:58px;
+		font-size:1.7rem;
+		line-height:1.1;
+	}
+	.school-image-v2 h1 small{
+		font-size:0.75rem;
+		line-height:26px;
+	}
+	.school-image-v2 h1 small::before {
+		left:-23px;
+		top:8px;
+		width:17px;
+	}
+	.school-image-v2 h1 small::after {
+		right:-23px;
+		top:8px;
+		width:17px;
+	}
+	.school-image-v2 .promo-image {
+		width:90px;
+		height:90px;
+    	}
+}
+/* school-image-v2 classes end */
+
+/* school-testimonial classes starts */
+.school-testimonial{
+	position:relative;
+	z-index:0;
+	background:url(https://images.uberapp.com/w/images/hero/kids_school_istock000024717554.jpg) center no-repeat;
+	-webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+	text-align:center;
+}
+.school-testimonial .row {
+    padding: 50px 20px;
+}
+.school-testimonial {
+	width: 100%;
+	height:auto;
+}
+.school-testimonial .content{
+	position:relative;
+	z-index:0;
+}
+.school-testimonial .content-box {
+	min-width:23.75rem;
+ 	background:rgba(255, 255, 255, 0.80);
+ 	padding:18px 30px 15px 30px;
+	text-align:center;
+}
+
+.school-testimonial .row .quote{
+	background:#ffffff url(https://images.uberapp.com/w/images/icons/icon-quote.jpg) 0 0 no-repeat;
+	padding:64px 40px 23px 36px;
+	margin-bottom: 1.25rem;
+}
+
+.school-testimonial .content-box h2 {
+	line-height:1.2;
+	padding:5px 0 13px 0;
+	font-family:'Open Sans', sans-serif;
+	font-weight:400;
+	font-size:1.875rem;
+	max-width:260px;
+	margin:0 auto;
+}
+.school-testimonial .content-box ul{
+	list-style:none;
+	margin-left:0;
+}
+.school-testimonial .content-box ul li{
+	background:url(https://images.uberapp.com/w/images/icons/chrysler_logo1%402x.png) center top no-repeat;
+	padding:80px 0 6px 0;
+	margin-top:2px;
+	font-family:'Open Sans', sans-serif;
+	font-weight:400;
+	font-size:1rem;
+	line-height:1.3;
+}
+.school-testimonial .content-box ul li.icon-01{
+	background-image:url(https://images.uberapp.com/w/images/icons/chrysler_logo1%402x.png);
+}
+@media only screen and (max-width: 640px) {
+	.where-you-go .content-box {
+		min-width:inherit;
+		max-width:23.75rem;
+	}
+}
+/* school-testimonial classes end */
+
+
+/* our-values-v2 classes starts */
+.our-values-v2{
+	text-align:center;
+	padding-bottom:28px;
+}
+.our-values-v2 .row {
+	padding:10px 0 14px 0;
+}
+.our-values-v2 h2 {
+	padding-top:18px;
+	padding-bottom:9px;
+	margin:0;
+	font-family:'Open Sans', sans-serif;
+	font-weight:400;
+	font-size:1.875rem;
+}
+.our-values-v2 h2 span{
+	background:url(https://images.uberapp.com/w/images/icons/heart.png) 20px 12px no-repeat;
+	display:inline-block;
+	padding-left:25px;
+	padding-right:25px;
+}
+
+.our-values-v2 .row .box{
+	background:#ebf7f8;
+	padding:0 30px 24px 30px;
+	margin-bottom: 1.25rem;
+}
+.our-values-v2 .row .box p{
+	font-size:0.875rem;
+	color:#333333;
+	font-family:'Open Sans', sans-serif;
+}
+
+.our-values-v2 .row .box ul{
+	text-align:left;
+}
+
+.our-values-v2 .row .box h3{
+	font-size:2.8rem;
+	color:#3facb7;
+	font-weight:400;
+	border-bottom:1px solid #3facb7;
+	font-family:'Open Sans', sans-serif;
+	letter-spacing: -4px;
+	margin-top:0;
+	line-height:normal;
+	position: relative;
+	top: -2px;
+        z-index: 0;
+	padding-bottom:3px;
+	margin-bottom:14px;
+	margin-left:-15px;
+	margin-right:-15px;
+}
+.our-values-v2 .row .box h3 small{
+	font-size:0.875rem;
+	color:#3facb7;
+	font-weight:400;
+	display:block;
+	text-transform:uppercase;
+	letter-spacing: normal;
+	line-height:normal;
+	position: relative;
+    	top: -14px;
+    	z-index: 0;
+	margin:0 -5px;
+}
+.our-values-v2 .row .box h3 sup{
+	font-size:2.5rem;
+	position: relative;
+    	top:-28px;
+	left:-3px;
+    	z-index: 0;
+}
+/* our-values-v2 classes end */
+
+
+@media only screen and (min-width: 768px) {
+	.global-footer .row .inline-list{
+		display:inline-block;
+		float:none;
+		margin:0 auto;
+	}
+	.global-footer .logos .row .columns{
+		text-align:center;
+	}
+	.global-footer .logos .row {
+		padding: 17px 8px;
+	}
+	.global-footer .logos .inline-list > li:first-child{
+		margin-left:0;
+	}
+}
+
+
+/* hero imagees starts */
+.hero-image-v2{
+	background-image:url(//images.uberapp.com/w/images/hero/1920_home_hero1_1059_bk.jpg);
+}
+.hero-image-v2.about-hero-img{
+	background-image:url(//images.uberapp.com/w/images/hero/1920_about_us_hero1.png);
+}
+.hero-image-v2.news-hero-img{
+	background-image:url(//images.uberapp.com/w/images/hero/1920_news_hero.png);
+}
+.hero-image-v2.contact-hero-img{
+	background-image:url(../bg7.jpg.jpg);
+}
+.hero-image-v2.faq-hero-img{
+	background-image:url(//images.uberapp.com/w/images/hero/faq_driver_mask1.jpg);
+}
+
+.become-a-uber{
+	background-image:url(//images.uberapp.com/w/images/hero/1920_ds_hero.jpg);
+}
+
+
+@media only screen and (max-width: 980px) {
+	.hero-image-v2{
+		background-image:url(//images.uberapp.com/w/images/hero/dweb_home_hero_1059_bk.jpg);
+	}
+	.become-a-uber{
+		background-image:url(//images.uberapp.com/w/images/hero/dweb_ds_hero.jpg);
+	}
+}
+@media only screen and (max-width: 769px) {
+	.hero-image-v2{
+		background-image:url(//images.uberapp.com/w/images/hero/tweb_home_hero_1059_bk.jpg);
+	}
+	.become-a-uber{
+		background-image:url(//images.uberapp.com/w/images/hero/tweb_ds_hero.jpg);
+	}
+}
+@media only screen and (max-width: 321px) {
+	.hero-image-v2{
+		background-image:url(//images.uberapp.com/w/images/hero/mweb_home_hero_1059_bk.jpg);
+	}
+	.become-a-uber{
+		background-image:url(//images.uberapp.com/w/images/hero/mweb_ds_hero.jpg);
+	}
+}
+/* hero imagees end */

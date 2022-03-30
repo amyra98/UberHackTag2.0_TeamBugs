@@ -1,0 +1,30 @@
+import React from "react";
+import {View, Text} from "react-native";
+
+const NameComp = (props) => {
+    return (
+        <View>
+            <Text> Message </Text>
+        </View>
+    );
+};
+
+export default NameComp;
+
+
+
+
+
+
+
+
+
+import {StyleSheet} from 'react-native';
+
+
+const styles = StyleSheet.create({
+
+
+});
+
+export default styles;
